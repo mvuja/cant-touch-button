@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button that runs away!</title>
+    <script defer src="app.js"></script>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background: rgb(18, 29, 25);
+        }
+
+        #evil{
+            position: absolute;
+            white-space: nowrap;
+            font-size: 1.5rem;
+            background: rgb(76, 199, 138);
+            color: rgb(255, 255, 255);
+            border: 2px solid #fff;
+            border-radius: 100px;
+            padding: 10px;
+        }
+
+        #evil:focus{
+            background: rgb(196, 12, 12);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="evil">Can't Touch This!</button>
+</body>
+</html>
